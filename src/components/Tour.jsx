@@ -1,6 +1,10 @@
+import { useState } from 'react'
 import './css/Tour.css'
 
 function Tour({ image, name, description, price, children}) {
+
+  const [ readMore, setReadMore ] = useState(false)
+
   return (
     <>
       <div className="card__container">
@@ -10,8 +14,8 @@ function Tour({ image, name, description, price, children}) {
           <div className="price">${price}<span></span></div>
         </div>
         <p className="description">
-          {description}
-          <button className='read-btn'>Read more</button>
+          {readMore ? description : `${description.substring(0, 200)}...`}
+          <button className='read-btn' onClick={() => setReadMore(readMore => !readMore)}>{readMore ? "Read Less" : "Read More"}</button>
         </p>
         { children }
       </div>

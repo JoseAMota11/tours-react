@@ -58,6 +58,7 @@
   color: #a00;
   letter-spacing: 1.5px;
   cursor: pointer;
+  box-shadow: 0 0 5px rgba(170, 0, 0, 0.3);
 }
 
 .delete:hover {
@@ -65,6 +66,7 @@
   background-color: #a00;
   color: #fff;
   border: #fff solid 1px;
+  box-shadow: none;
 }
 
 .read-btn {
@@ -74,4 +76,8 @@
   color: #49a6e9;
   font-weight: 600;
   cursor: pointer;
+}
+
+.read-btn:hover {
+  text-decoration: underline;
 }
