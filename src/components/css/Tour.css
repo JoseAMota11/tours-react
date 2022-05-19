@@ -1,0 +1,77 @@
+.card__container {
+  width: 600px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 20px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.name__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  height: 40px;
+}
+
+.name {
+  color: #1f354b;
+  font-size: 18px;
+}
+
+.price {
+  background-color: #ebf7ff;
+  width: 70px;
+  text-align: center;
+  border-radius: 4px;
+  color: #49a6e9;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.description {
+  text-align: justify;
+  padding: 0 25px;
+  font-size: 14px;
+  color: #333;
+}
+
+.delete {
+  width: 180px;
+  height: 30px;
+  font-size: 16px;
+  align-self: center;
+  background-color: #fff;
+  border: #a00 solid 1px;
+  border-radius: 4px;
+  color: #a00;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.delete:hover {
+  transition: all 0.4s ease;
+  background-color: #a00;
+  color: #fff;
+  border: #fff solid 1px;
+}
+
+.read-btn {
+  border: none;
+  background-color: transparent;
+  margin-left: 10px;
+  color: #49a6e9;
+  font-weight: 600;
+  cursor: pointer;
+}
